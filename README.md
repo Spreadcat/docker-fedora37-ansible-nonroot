@@ -34,7 +34,7 @@ If you want to build it locally, do the following:
 
 1. Install Docker or Podman.
 1. Build the image.
-1. Run a container from the image `podman run --detach --privileged  --volume=/sys/fs/cgroup:/sys/fs/cgroup:rw --cgroupns=host localhost/docker-fedora-ansible-nonroot`. For testing of Ansible roles I integrate this into molecule, but you can mount the current directory into the container with ``---volume=`pwd`:/etc/ansible/roles/testing:ro``).
+1. Run a container from the image `podman run --detach --privileged  --volume=/sys/fs/cgroup:/sys/fs/cgroup:rw --cgroupns=host localhost/fedora37-ansible-nonroot`. For testing of Ansible roles I integrate this into molecule, but you can mount the current directory into the container with ``---volume=`pwd`:/etc/ansible/roles/testing:ro``).
 1. Use Ansible inside the container:
 
     a. `docker -exec --tty [container_id] env TeRM=xterm ansible --version`
