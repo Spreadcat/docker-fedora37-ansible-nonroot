@@ -1,6 +1,6 @@
 # syntax = docker/dockerfile:1.3
 FROM fedora:37
-LABEL maintainer="Jeff Geerling"
+LABEL maintainer="Daniel Buøy-Vehn"
 ENV container=docker
 
 ENV pip_packages "ansible"
